@@ -1,7 +1,7 @@
 {
   "github_username": "Priest-MBAI",
   "dashboard_url": "https://Priest-MBAI.github.io/earnings-extractor-assessor/",
-  "contact_email": "alanasmana.2026@mbai.smu.edu.sg",
+  "contact_email": "ai.alan.asman@gmail.com",
   "task_name": "US market earnings watcher and assessor",
   "timezone": "Asia/Singapore",
   "schedule": {
@@ -9,9 +9,18 @@
     "assessor": "Daily at 6:37 AM Singapore time"
   },
   "companies": [
-    { "cik": 1652044, "name": "Alphabet" },
-    { "cik": 1018724, "name": "Amazon" },
-    { "cik": 1326801, "name": "Meta Platforms" }
+    {
+      "cik": 1652044,
+      "name": "Alphabet"
+    },
+    {
+      "cik": 1018724,
+      "name": "Amazon"
+    },
+    {
+      "cik": 1326801,
+      "name": "Meta Platforms"
+    }
   ],
   "sources": {
     "radar": "https://efts.sec.gov/LATEST/search-index?q=%22Results%20of%20Operations%20and%20Financial%20Condition%22&forms=8-K&dateRange=custom&startdt={start}&enddt={end}",
@@ -28,13 +37,25 @@
   "radar_brief_max": 20,
   "radar_keep_days": 120,
   "xbrl_tags": {
-    "revenue": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax"],
-    "operating_income": ["OperatingIncomeLoss"],
-    "net_income": ["NetIncomeLoss"],
-    "diluted_eps": ["EarningsPerShareDiluted"]
+    "revenue": [
+      "Revenues",
+      "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ],
+    "operating_income": [
+      "OperatingIncomeLoss"
+    ],
+    "net_income": [
+      "NetIncomeLoss"
+    ],
+    "diluted_eps": [
+      "EarningsPerShareDiluted"
+    ]
   },
   "match_tolerance_percent": 0.5,
-  "quarter_length_days": [80, 100],
+  "quarter_length_days": [
+    80,
+    100
+  ],
   "recheck_days": 10,
   "cache_max_hours": 20,
   "pause_seconds_between_requests": 0.25,
